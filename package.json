@@ -1,0 +1,15 @@
+{
+  "name": "p3_legoues_clement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style_index.css ./sass/menus.scss:public/css/style_menus.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClemLG/ClementLegoues_3_23112021"
+  },
+  "author": "Clément Le Goues",
+  "license": "ISC"
+}

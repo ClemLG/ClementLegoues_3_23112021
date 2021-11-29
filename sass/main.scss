@@ -5,9 +5,18 @@
 
 // Base
 @import "./base/base";
+@import "./base/reset";
+@import "./base/typography";
 
 // Components
+@import "./components/buttons";
+@import "./components/card-grid";
+
 // Layout
+@import "./layouts/header";
+@import "./layouts/page-container";
+@import "./layouts/footer";
+@import "./layouts/form";
 
 // Pages
 @import "./pages/home";

@@ -1,0 +1,9 @@
+.restaurants {
+    &__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    &__card {
+        border: 1px solid #000;
+    }
+}

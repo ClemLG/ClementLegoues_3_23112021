@@ -1,0 +1,44 @@
+// FONTS
+
+@mixin font-primary {
+    font-family: 'roboto', sans-serif;
+};
+
+@mixin font-secondary {
+    font-family: 'shrikhand', sans-serif;
+}
+
+// SCALE IMG
+
+@mixin scale-img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// BREAKPOINTS 
+
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints, small)){
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, medium)){
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, large)){
+        @content;
+    }
+}
+// FLEXBOX
+
+@mixin flex ($display){
+    display: flex;
+    
+}
+

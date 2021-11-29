@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants__card {
+  border: 1px solid #000;
+}
+
+.page-container {
+  padding: 0 32px;
+  max-width: 1440px;
+  margin: auto;
+  font-family: "roboto", sans-serif;
+}
+@media screen and (min-width: 280px) {
+  .page-container {
+    padding: 0 16px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .page-container {
+    padding: 0 32px;
+  }
+}
+
+.footer__title {
+  font-family: "shrikhand", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

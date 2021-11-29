@@ -1,6 +1,22 @@
-$color: red;
+// COLORS PALETTE
 
-header {
-    color: $color;
-    
-}
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$background-header-homepage: #EAEAEA;
+$background-grey: #F6F6F6;
+
+
+// BREAKPOINTS
+
+$breakpoints: (
+    'small': 280px,
+    'medium': 740px,
+    'large' : 1024px,
+);
+
+// MARGIN/PADDING PAGE
+
+$padding-mobile: 0 16px;
+$padding-tablet: 0 32px;
+

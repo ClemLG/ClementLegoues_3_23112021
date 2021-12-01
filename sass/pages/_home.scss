@@ -24,17 +24,104 @@
         }
 
         .primary-title {
-            margin-bottom: 16px;
+            margin-bottom: $gutter;
         }
 
         &__subtitle {
-            font-weight: 100;
+            font-weight: 300;
             font-size: 19px;
         }
 
         .primary-button {
             margin-top: $gutter*2;
         }
+    }
+
+    .process {
+        padding: $gutter*2 0;
+
+        .primary-title {
+            margin-bottom: $gutter*2;
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        &__card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $background-grey;
+            padding: $gutter+8;
+            border-radius: 18px;
+        }
+
+        &__card__p {
+            font-weight: 500;
+            display: inline;
+            }
+        
+        &__card__number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 6px;
+            width: 24px;
+            height: 24px;
+            border-radius: 999px;
+            background: $color-primary;
+            color: $white;
+        }
+
+        &__card__i {
+            position: relative;
+            left: -32px;
+            color: rgb(109, 106, 106);
+            font-size: 22px;
+            }
+    }
+
+    .restaurants {
+        background: $background-grey;
+        padding: $gutter*2 0;
+
+        .primary-title {
+            margin-bottom: $gutter;
+        }
+
+        &__cards-grid {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        &__card__img {
+            border-radius: 18px 18px 0 0;
+        }
+
+        &__card__content {
+            padding: $gutter;
+            row-gap: 8px;
+            background: $white;
+            border-radius: 0 0 18px 18px;
+        }
+
+        .secondary-title {
+            margin-bottom: 8px;
+        }
+
+        &__card__heart {
+            .love-button__icon {
+                font-size: 24px;
+                font-weight: 100;
+            }
+        }
+
+
     }
 }
 

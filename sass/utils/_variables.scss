@@ -5,6 +5,7 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $background-header-homepage: #EAEAEA;
 $background-grey: #F6F6F6;
+$white: #fff;
 
 
 // BREAKPOINTS
@@ -22,3 +23,14 @@ $gutter: 16px;
 // GAP 
 
 $inside-gap: 16px;
+
+// FONT WEIGHT
+
+$roboto-weight: (
+    'thin': 100,
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'bold': 700,
+    'black': 900,
+)

@@ -1,3 +1,5 @@
+// FONT FAMILY 
+
 @mixin font-primary {
     font-family: 'roboto', sans-serif;
 };
@@ -11,6 +13,11 @@ body {
 }
 
 .primary-title {
-    font-weight:500;
+    font-weight: 700;
     font-size: 24px;
+}
+
+.secondary-title {
+    font-weight: 700;
+    font-size: 16px;
 }

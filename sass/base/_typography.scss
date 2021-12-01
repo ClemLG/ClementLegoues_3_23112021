@@ -1,0 +1,16 @@
+@mixin font-primary {
+    font-family: 'roboto', sans-serif;
+};
+
+@mixin font-secondary {
+    font-family: 'shrikhand', sans-serif;
+}
+
+body {
+    @include font-primary;
+}
+
+.primary-title {
+    font-weight:500;
+    font-size: 24px;
+}

@@ -1,0 +1,8 @@
+.primary-button {
+    padding: $gutter $gutter+8;
+    border-radius: 999px;
+    background: rgb(255,121,218);
+    background: linear-gradient(170deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    color: #fff;
+    box-shadow: 0 6px 6px rgba($color: #000000, $alpha: .15);
+}

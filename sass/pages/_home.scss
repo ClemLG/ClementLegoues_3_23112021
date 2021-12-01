@@ -1,0 +1,40 @@
+.page-home {
+
+    .place {
+        padding: $gutter 0;
+        display: flex;
+        justify-content: center;
+        background: $background-header-homepage;
+        
+        &__form__input {
+            text-align: center;
+            background: $background-header-homepage;
+        }
+    }
+
+    .hero {
+        padding: $gutter*2 $gutter;
+        text-align: center;
+        background: $background-grey;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .primary-title {
+            margin-bottom: 16px;
+        }
+
+        &__subtitle {
+            font-weight: 100;
+            font-size: 19px;
+        }
+
+        .primary-button {
+            margin-top: $gutter*2;
+        }
+    }
+}
+

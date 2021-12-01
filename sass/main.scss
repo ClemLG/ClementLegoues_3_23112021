@@ -1,7 +1,6 @@
 // Utils 
-@import "./utils/mixins";
 @import "./utils/variables";
-@import "./utils/functions";
+@import "./utils/responsive";
 
 // Base
 @import "./base/base";
@@ -14,9 +13,7 @@
 
 // Layout
 @import "./layouts/header";
-@import "./layouts/page-container";
 @import "./layouts/footer";
-@import "./layouts/form";
 
 // Pages
 @import "./pages/home";

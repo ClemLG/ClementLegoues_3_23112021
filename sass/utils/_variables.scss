@@ -10,13 +10,15 @@ $background-grey: #F6F6F6;
 // BREAKPOINTS
 
 $breakpoints: (
-    'small': 280px,
-    'medium': 740px,
-    'large' : 1024px,
+    'sm': 280px,
+    'md': 740px,
+    'lg': 1024px,
 );
 
-// MARGIN/PADDING PAGE
+// MARGIN & PADDING 
 
-$padding-mobile: 0 16px;
-$padding-tablet: 0 32px;
+$gutter: 16px;
 
+// GAP 
+
+$inside-gap: 16px;

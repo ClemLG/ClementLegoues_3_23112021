@@ -129,8 +129,28 @@ body {
   padding: 16px 0;
 }
 
+.footer {
+  padding: 16px 0;
+  background: #353535;
+}
 .footer__title {
+  margin-bottom: 16px;
   font-family: "shrikhand", sans-serif;
+  color: #fff;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footer__links__link {
+  color: #fff;
+}
+.footer__links__link .i-modifier {
+  font-size: 10px;
+}
+.footer__links__p--margin {
+  margin-left: 8px;
 }
 
 .page-home .place {

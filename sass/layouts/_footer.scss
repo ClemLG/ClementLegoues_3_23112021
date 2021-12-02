@@ -1,5 +1,26 @@
 .footer {
+    padding: $gutter 0;
+    background: #353535;
     &__title {
+        margin-bottom: $gutter;
         @include font-secondary;
+        color: $white;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__links__link {
+        color: $white;
+        .i-modifier {
+            font-size: 10px;
+        }
+    }
+
+    &__links__p--margin {
+        margin-left: 8px;
     }
 }

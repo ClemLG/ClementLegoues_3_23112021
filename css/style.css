@@ -94,6 +94,35 @@ body {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
 }
 
+.restaurants__cards-grid {
+  display: grid;
+  grid-gap: 16px;
+}
+.restaurants__card {
+  width: 100%;
+}
+.restaurants__card__img img {
+  border-radius: 18px 18px 0 0;
+}
+.restaurants__card__new {
+  padding: 8px 16px;
+  background: #99E2D0;
+  color: #278870;
+  width: max-content;
+  font-weight: 500;
+}
+.restaurants__card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  row-gap: 8px;
+  background: #fff;
+  border-radius: 0 0 18px 18px;
+}
+.restaurants .secondary-title {
+  margin-bottom: 8px;
+}
+
 .header__brand {
   display: flex;
   justify-content: center;
@@ -181,27 +210,6 @@ body {
 }
 .page-home .restaurants .primary-title {
   margin-bottom: 16px;
-}
-.page-home .restaurants__cards-grid {
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-}
-.page-home .restaurants__card__img {
-  border-radius: 18px 18px 0 0;
-}
-.page-home .restaurants__card__content {
-  padding: 16px;
-  row-gap: 8px;
-  background: #fff;
-  border-radius: 0 0 18px 18px;
-}
-.page-home .restaurants .secondary-title {
-  margin-bottom: 8px;
-}
-.page-home .restaurants__card__heart .love-button__icon {
-  font-size: 24px;
-  font-weight: 100;
 }
 
 /*# sourceMappingURL=style.css.map */

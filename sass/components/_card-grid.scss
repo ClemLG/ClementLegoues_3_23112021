@@ -1,0 +1,38 @@
+.restaurants {
+    &__cards-grid {
+        display: grid;
+        grid-gap: 16px;
+    }
+
+    &__card {
+        width: 100%;
+    }
+
+    &__card__img {
+        img {
+        border-radius: 18px 18px 0 0;
+        }
+    }
+
+    &__card__new {
+        padding: 8px $gutter;
+        background: $color-tertiary;
+        color: darken($color: $color-tertiary, $amount: 40%);
+        width: max-content;
+        font-weight: 500;
+    }
+
+    &__card__content {
+        display: flex;
+        justify-content: space-between;
+        padding: $gutter;
+        row-gap: 8px;
+        background: $white;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .secondary-title {
+        margin-bottom: 8px;
+    }
+
+}

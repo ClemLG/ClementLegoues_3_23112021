@@ -92,36 +92,6 @@
         .primary-title {
             margin-bottom: $gutter;
         }
-
-        &__cards-grid {
-            display: flex;
-            flex-direction: column;
-            row-gap: 16px;
-        }
-
-        &__card__img {
-            border-radius: 18px 18px 0 0;
-        }
-
-        &__card__content {
-            padding: $gutter;
-            row-gap: 8px;
-            background: $white;
-            border-radius: 0 0 18px 18px;
-        }
-
-        .secondary-title {
-            margin-bottom: 8px;
-        }
-
-        &__card__heart {
-            .love-button__icon {
-                font-size: 24px;
-                font-weight: 100;
-            }
-        }
-
-
     }
 }
 

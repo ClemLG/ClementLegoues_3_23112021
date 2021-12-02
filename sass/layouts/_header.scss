@@ -2,6 +2,12 @@
     &__brand {
         display: flex;
         justify-content: center;
+        align-items: center;
         padding: $gutter 0;
+    }
+
+    &__icon-link {
+        font-size: 24px;
+        font-weight: 900;
     }
 }

@@ -1,0 +1,64 @@
+.header {
+    &__logo {
+        font-size: 8px;
+    }
+}
+
+.cover {
+    &__image{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+    border-radius: 32px 32px 0 0;
+    background: $background-grey;
+
+    &__header {
+        padding-top: $gutter;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn{
+        text-align: center;
+    }
+}
+
+.food {  
+    &__cards {
+        display: grid;
+        grid-gap: 16px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $white;
+        padding: $gutter;
+        border-radius: 16px 16px 16px 16px;
+
+        .secondary-title {
+            margin-bottom: 8px;
+        }
+        
+        &__info {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        &__price {
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
+

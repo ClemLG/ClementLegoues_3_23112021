@@ -1,7 +1,6 @@
 img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
 }
 
 .container {
@@ -85,6 +84,19 @@ body {
   font-size: 16px;
 }
 
+.menus-title {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "shrikhand", sans-serif;
+}
+
+.menus-parts-title {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "roboto", sans-serif;
+}
+
 .primary-button {
   padding: 16px 24px;
   border-radius: 999px;
@@ -102,6 +114,7 @@ body {
   width: 100%;
 }
 .restaurants__card__img img {
+  object-fit: cover;
   border-radius: 18px 18px 0 0;
 }
 .restaurants__card__new {
@@ -126,7 +139,12 @@ body {
 .header__brand {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 16px 0;
+}
+.header__icon-link {
+  font-size: 24px;
+  font-weight: 900;
 }
 
 .footer {
@@ -230,6 +248,55 @@ body {
 }
 .page-home .restaurants .primary-title {
   margin-bottom: 16px;
+}
+
+.header__logo {
+  font-size: 8px;
+}
+
+.cover__image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 50px;
+  border-radius: 32px 32px 0 0;
+  background: #F6F6F6;
+}
+.menu__header {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__btn {
+  text-align: center;
+}
+
+.food__cards {
+  display: grid;
+  grid-gap: 16px;
+}
+.food__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px 16px 16px 16px;
+}
+.food__card .secondary-title {
+  margin-bottom: 8px;
+}
+.food__card__info {
+  display: flex;
+  justify-content: space-between;
+}
+.food__card__price {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

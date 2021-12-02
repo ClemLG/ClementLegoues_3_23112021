@@ -9,17 +9,27 @@
     }
 
     &__card__img {
+        position: relative;
+        height: 0;
+        padding-bottom:60%;
         img {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             border-radius: 18px 18px 0 0;
         }
     }
 
     &__card__new {
+        position: absolute;
+        top: 16px;
+        right: 16px;
         padding: 8px $gutter;
         background: $color-tertiary;
         color: darken($color: $color-tertiary, $amount: 40%);
-        width: max-content;
         font-weight: 500;
     }
 

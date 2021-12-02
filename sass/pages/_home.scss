@@ -1,4 +1,7 @@
 .page-home {
+    section {
+        padding: $gutter*2 0;
+    }
 
     .place {
         padding: $gutter 0;
@@ -13,7 +16,6 @@
     }
 
     .hero {
-        padding: $gutter*2 $gutter;
         text-align: center;
         background: $background-grey;
 
@@ -38,7 +40,6 @@
     }
 
     .process {
-        padding: $gutter*2 0;
 
         .primary-title {
             margin-bottom: $gutter*2;
@@ -87,7 +88,6 @@
 
     .restaurants {
         background: $background-grey;
-        padding: $gutter*2 0;
 
         .primary-title {
             margin-bottom: $gutter;

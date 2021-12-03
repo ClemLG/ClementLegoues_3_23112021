@@ -283,11 +283,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 16px;
-  position: relative;
-}
-.menu__header .restaurants__card__heart {
-  position: absolute;
-  left: 50px;
 }
 .menu__btn {
   text-align: center;

@@ -86,7 +86,7 @@ body {
 
 .menus-title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 30px;
   font-family: "shrikhand", sans-serif;
 }
 
@@ -153,9 +153,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   padding: 16px 0;
 }
 .header__icon-link {
+  position: absolute;
+  left: 16px;
   font-size: 24px;
   font-weight: 900;
 }
@@ -261,10 +264,6 @@ body {
   margin-bottom: 16px;
 }
 
-.header__logo {
-  font-size: 8px;
-}
-
 .cover__image {
   display: flex;
   flex-wrap: wrap;
@@ -280,12 +279,23 @@ body {
   background: #F6F6F6;
 }
 .menu__header {
-  padding-top: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  position: relative;
+}
+.menu__header .restaurants__card__heart {
+  position: absolute;
+  left: 50px;
 }
 .menu__btn {
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+.menu__btn a {
+  width: 150px;
 }
 
 .food__cards {

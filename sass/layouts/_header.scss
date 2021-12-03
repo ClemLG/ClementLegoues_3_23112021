@@ -3,11 +3,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         padding: $gutter 0;
     }
 
     &__icon-link {
+        position: absolute;
+        left: 16px;
         font-size: 24px;
         font-weight: 900;
     }
+
 }

@@ -1,3 +1,9 @@
+.restaurants {
+    &__card__heart {
+        padding-right: $gutter+4;
+    }
+}
+
 .cover {
     &__image{
         display: flex;
@@ -16,7 +22,6 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding-top: $gutter;
     }
 
@@ -43,9 +48,14 @@
         background: $white;
         padding: $gutter;
         border-radius: 16px 16px 16px 16px;
+        @include main-shadow;
 
         .secondary-title {
             margin-bottom: 8px;
+        }
+
+        p {
+            font-weight: 100;
         }
         
         &__info {
@@ -54,7 +64,7 @@
         }
         
         &__price {
-            font-weight: 700;
+            font-weight: 500;
         }
     }
 }

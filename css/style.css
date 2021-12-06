@@ -80,21 +80,31 @@ body {
 }
 
 .secondary-title {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .menus-title {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "shrikhand", sans-serif;
 }
 
 .menus-parts-title {
   margin-bottom: 32px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   font-family: "roboto", sans-serif;
+  position: relative;
+}
+.menus-parts-title::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  background-color: #99E2D0;
 }
 
 .primary-button {
@@ -145,8 +155,39 @@ body {
   background: #fff;
   border-radius: 0 0 18px 18px;
 }
+.restaurants__card__p {
+  font-weight: 300;
+}
 .restaurants .secondary-title {
   margin-bottom: 8px;
+}
+
+.place__form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  border-color: #000;
+}
+.place__form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+}
+.place__form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+}
+.place__form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .header__brand {
@@ -225,15 +266,21 @@ body {
 .page-home .process__cards {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 28px;
 }
 .page-home .process__card {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 20% 60%;
   align-items: center;
+  text-align: center;
   background: #F6F6F6;
   padding: 24px;
   border-radius: 18px;
+  box-shadow: 0px 2px 10px #cecece;
+}
+.page-home .process__card:hover {
+  background: #f5edff;
+  color: #9356DC;
 }
 .page-home .process__card__p {
   font-weight: 500;
@@ -252,8 +299,6 @@ body {
   color: #fff;
 }
 .page-home .process__card__i {
-  position: relative;
-  left: -32px;
   color: #6d6a6a;
   font-size: 22px;
 }
@@ -262,6 +307,10 @@ body {
 }
 .page-home .restaurants .primary-title {
   margin-bottom: 16px;
+}
+
+.restaurants__card__heart {
+  padding-right: 20px;
 }
 
 .cover__image {
@@ -281,7 +330,6 @@ body {
 .menu__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-top: 16px;
 }
 .menu__btn {
@@ -304,16 +352,20 @@ body {
   background: #fff;
   padding: 16px;
   border-radius: 16px 16px 16px 16px;
+  box-shadow: 0px 2px 10px #cecece;
 }
 .food__card .secondary-title {
   margin-bottom: 8px;
+}
+.food__card p {
+  font-weight: 100;
 }
 .food__card__info {
   display: flex;
   justify-content: space-between;
 }
 .food__card__price {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

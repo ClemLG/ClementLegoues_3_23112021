@@ -12,25 +12,39 @@ body {
     @include font-primary;
 }
 
+// TITLES
+
 .primary-title {
     font-weight: 700;
     font-size: 24px;
 }
 
 .secondary-title {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .menus-title {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 24px;
     @include font-secondary;
 }
 
 .menus-parts-title {
     margin-bottom: $gutter*2;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     @include font-primary;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        background-color: $color-tertiary;
+
+    }
 }

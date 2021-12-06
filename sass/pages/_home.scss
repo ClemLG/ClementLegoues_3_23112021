@@ -48,22 +48,29 @@
         &__cards {
             display: flex;
             flex-direction: column;
-            row-gap: $inside-gap;
+            row-gap: $inside-gap+12;
         }
 
         &__card {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 20% 60%;
             align-items: center;
+            text-align: center;
             background: $background-grey;
             padding: $gutter+8;
             border-radius: 18px;
+            @include main-shadow;
+
+            &:hover{
+                background: $background-process;
+                color: $color-primary;
+            }
         }
 
         &__card__p {
             font-weight: 500;
             display: inline;
-            }
+        }
         
         &__card__number {
             display: flex;
@@ -79,11 +86,9 @@
         }
 
         &__card__i {
-            position: relative;
-            left: -32px;
             color: rgb(109, 106, 106);
             font-size: 22px;
-            }
+        }    
     }
 
     .restaurants {

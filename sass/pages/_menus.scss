@@ -50,6 +50,17 @@
         border-radius: 16px 16px 16px 16px;
         @include main-shadow;
 
+        &::before {
+            content: "";
+            opacity: 0;
+        }
+
+        &::after{
+            content: "";
+            opacity: 1;
+            
+        }
+
         .secondary-title {
             margin-bottom: 8px;
         }

@@ -63,7 +63,9 @@
 
             &:hover{
                 background: $background-process;
-                color: $color-primary;
+                i{
+                    color: $color-primary;
+                }
             }
         }
 

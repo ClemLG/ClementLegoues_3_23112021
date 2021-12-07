@@ -7,6 +7,37 @@ img {
   padding: 16px;
 }
 
+.loader {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #99E2D0;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -280,6 +311,8 @@ body {
 }
 .page-home .process__card:hover {
   background: #f5edff;
+}
+.page-home .process__card:hover i {
   color: #9356DC;
 }
 .page-home .process__card__p {

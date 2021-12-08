@@ -29,6 +29,7 @@
         text-align: center;
         padding-top: $gutter*2;
         padding-bottom: $gutter*3;
+        
         a {
             width: 150px;
         }
@@ -49,18 +50,23 @@
         padding: $gutter;
         border-radius: 16px 16px 16px 16px;
         @include main-shadow;
-
-        &::before {
-            content: "";
-            opacity: 0;
+      
+        &:nth-child(1) {
+            animation: cards-animation 1000ms 150ms;
         }
 
-        &::after{
-            content: "";
-            opacity: 1;
-            
+        &:nth-child(2){
+            animation: cards-animation 1000ms 300ms;
         }
 
+        &:nth-child(3) {
+            animation: cards-animation 1000ms 450ms;
+        }
+
+        &:nth-child(4) {
+            animation: cards-animation 1000ms 600ms;
+        }
+       
         .secondary-title {
             margin-bottom: 8px;
         }

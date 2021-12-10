@@ -36,6 +36,7 @@
     &__card__content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: $gutter;
         row-gap: 8px;
         background: $white;

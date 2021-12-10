@@ -12,9 +12,9 @@ $white: #fff;
 // BREAKPOINTS
 
 $breakpoints: (
-    'sm': 280px,
-    'md': 740px,
-    'lg': 1024px,
+    'sm': 320px,
+    'md': 600px,
+    'lg': 1023px,
 );
 
 // MARGIN & PADDING 
@@ -28,7 +28,7 @@ $inside-gap: 16px;
 // CUBIC BEZIER
 
 $easings: (
-ease-in: cubic-bezier(0.11, 0, 0.5, 0),
-ease-out: cubic-bezier(0.5, 1, 0.89, 1),
-ease-in-out: cubic-bezier(0.45, 0, 0.55, 1),
+    ease-in: cubic-bezier(0.11, 0, 0.5, 0),
+    ease-out: cubic-bezier(0.5, 1, 0.89, 1),
+    ease-in-out: cubic-bezier(0.45, 0, 0.55, 1),
 );

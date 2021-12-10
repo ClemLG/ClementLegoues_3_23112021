@@ -17,56 +17,6 @@ img {
     padding: $gutter;
 }
 
-// HEART
-
- .love-button {
-    position: relative;
-
-    &__icon {
-        position: absolute;
-        left: -32px;
-        bottom: 0px;
-        font-size: 24px;
-        -webkit-transition: opacity .35s, -webkit-clip-path .35s, -webkit-transform .35s;
-        transition: opacity .35s, -webkit-clip-path .35s, -webkit-transform .35s;
-        transition: clip-path 0.35s, opacity 0.35s, transform 0.35s;
-        transition: clip-path .35s, opacity .35s, transform .35s, -webkit-clip-path .35s, -webkit-transform .35s;
-        -webkit-transition-timing-function: cubic-bezier(0.11, 0, 0.5, 0);
-        transition-timing-function: map-get($easings, ease-in);
-
-        &:hover {
-            transition-timing-function: map-get($easings, ease-out);
-        }
-    }
-
-    &__icon--unchecked {
-        -webkit-text-stroke: 0.9px $background-grey;
-        // &:hover {
-        //     // opacity: 0;
-        //     // transform: scale(0.8);
-        // }
-    }
-
-    &__icon--checked {
-        background: linear-gradient(0deg, hsl(317 100% 74%), hsl(267 66% 60%));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        opacity: 0;
-            -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-        //  -webkit-clip-path: inset(90% 0 0 0);
-        //  clip-path: inset(90% 0 0 0);
-        transition:  all 430ms ease-in-out;
-
-        &:hover {
-            opacity: 1;
-            transform: scale(1);
-            // -webkit-clip-path: inset(0 0 0 0);
-            // clip-path: inset(0 0 0 0);
-        }
-    }
-}
 
 
 

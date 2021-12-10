@@ -1,0 +1,80 @@
+.card-food-grid {
+    display: grid;
+    grid-gap: $inside-gap;
+}
+
+.card-food {
+    position: relative;
+    background: $white;
+    padding: $gutter;
+    border-radius: 16px 16px 16px 16px;
+    overflow: hidden;
+    transition: padding-right 300ms ease-in-out;
+    @include main-shadow;
+  
+    &:nth-child(1) {
+        animation: cards-animation 1000ms 300ms;
+    }
+
+    &:nth-child(2){
+        animation: cards-animation 1000ms 600ms;
+    }
+
+    &:nth-child(3) {
+        animation: cards-animation 1000ms 900ms;
+    }
+
+    &:nth-child(4) {
+        animation: cards-animation 1000ms 1200ms;
+    }
+   
+    .secondary-title {
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-weight: 300;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: $gutter;
+    }
+    
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__price {
+        font-weight: 500;
+    }
+
+    &__slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        bottom: 0;
+        color: $white;
+        font-size: 24px;
+        background-color: $color-tertiary;
+        width: 100px;
+        transition: margin-left 300ms ease-in-out;
+
+        &__icon {
+            transition: transform 300ms ease-in-out;        
+        }
+    }
+
+    &:hover {
+        padding-right: calc(100px + $gutter);
+        .card-food__slider {
+            margin-left: -100px;
+            &__icon {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

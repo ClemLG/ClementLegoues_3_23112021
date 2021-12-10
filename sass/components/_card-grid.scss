@@ -2,6 +2,11 @@
     &__cards-grid {
         display: grid;
         grid-gap: 16px;
+
+        @include tablet-only {
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            gap: 1.5rem;
+        }
     }
 
     &__card {
@@ -12,6 +17,7 @@
         position: relative;
         height: 0;
         padding-bottom:60%;
+        
         img {
             position: absolute;
             top:0;

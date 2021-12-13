@@ -1,16 +1,29 @@
 .footer {
     padding: $gutter 0;
     background: #353535;
+
     &__title {
         margin-bottom: $gutter;
         @include font-secondary;
         color: $white;
+
+        @include desktop-only {
+            text-align: center;
+            font-size: 32px;
+        }
     }
 
     &__links {
         display: flex;
         flex-direction: column;
         row-gap: 8px;
+
+        @include desktop-only {
+            flex-direction: row;
+            column-gap: $gutter*4;
+            padding: $gutter 0;
+            justify-content: center;
+        }
     }
 
     &__links__link {

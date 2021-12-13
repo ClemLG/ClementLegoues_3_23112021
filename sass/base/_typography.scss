@@ -28,6 +28,10 @@ body {
     font-weight: 500;
     font-size: 24px;
     @include font-secondary;
+
+    @include tablet-only {
+        font-size: 32px;
+    }
 }
 
 .menus-parts-title {

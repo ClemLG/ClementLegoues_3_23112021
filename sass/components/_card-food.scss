@@ -1,6 +1,10 @@
 .card-food-grid {
     display: grid;
     grid-gap: $inside-gap;
+    
+    @include desktop-only {
+        
+    }
 }
 
 .card-food {

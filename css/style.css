@@ -6,6 +6,16 @@ img {
 .container {
   padding: 16px;
 }
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 16px 32px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .container {
+    padding: 16px 64px;
+  }
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -77,6 +87,10 @@ button {
   cursor: pointer;
 }
 
+input:focus {
+  outline: none;
+}
+
 body {
   font-family: "roboto", sans-serif;
 }
@@ -95,6 +109,11 @@ body {
   font-weight: 500;
   font-size: 24px;
   font-family: "shrikhand", sans-serif;
+}
+@media screen and (min-width: 600px) {
+  .menus-title {
+    font-size: 32px;
+  }
 }
 
 .menus-parts-title {
@@ -134,8 +153,14 @@ body {
 }
 @media screen and (min-width: 600px) {
   .restaurants__cards-grid {
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurants__cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 }
 .restaurants__card {
@@ -144,14 +169,14 @@ body {
 .restaurants__card__img {
   position: relative;
   height: 0;
-  padding-bottom: 60%;
+  padding-bottom: 35%;
 }
 .restaurants__card__img img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
   border-radius: 18px 18px 0 0;
 }
@@ -309,7 +334,6 @@ body {
   display: grid;
   grid-gap: 16px;
 }
-
 .card-food {
   position: relative;
   background: #fff;
@@ -398,10 +422,24 @@ body {
   font-family: "shrikhand", sans-serif;
   color: #fff;
 }
+@media screen and (min-width: 1023px) {
+  .footer__title {
+    text-align: center;
+    font-size: 32px;
+  }
+}
 .footer__links {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+}
+@media screen and (min-width: 1023px) {
+  .footer__links {
+    flex-direction: row;
+    column-gap: 64px;
+    padding: 16px 0;
+    justify-content: center;
+  }
 }
 .footer__links__link {
   color: #fff;
@@ -414,7 +452,7 @@ body {
 }
 
 .page-home section {
-  padding: 32px 0;
+  padding: 16px 0;
 }
 .page-home .place {
   padding: 16px 0;
@@ -465,6 +503,7 @@ body {
   grid-template-columns: 20% 60%;
   align-items: center;
   text-align: center;
+  position: relative;
   background: #F6F6F6;
   padding: 24px;
   border-radius: 18px;
@@ -476,6 +515,13 @@ body {
 .page-home .process__card:hover i {
   color: #9356DC;
 }
+@media screen and (min-width: 1023px) {
+  .page-home .process__card {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+}
 .page-home .process__card__p {
   font-weight: 500;
   display: inline;
@@ -485,7 +531,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 6px;
+  left: -12px;
   width: 24px;
   height: 24px;
   border-radius: 999px;
@@ -506,6 +552,13 @@ body {
 .cover__image {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 600px) {
+  .cover__image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
 }
 
 .menu {

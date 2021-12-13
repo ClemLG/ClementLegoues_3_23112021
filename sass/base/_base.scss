@@ -15,6 +15,13 @@ img {
 
 .container {
     padding: $gutter;
+
+    @include tablet-only {
+        padding: $gutter $gutter*2;
+    }
+    @include desktop-only {
+        padding: $gutter $gutter*4;
+    }
 }
 
 

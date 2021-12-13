@@ -16,4 +16,9 @@
     }
 }
 
+@mixin xlarge-screen {
+    @media screen and (min-width: map-get($breakpoints, xlg)){
+        @content;
+    }
+}
 

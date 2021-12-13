@@ -17,6 +17,10 @@ body {
 .primary-title {
     font-weight: 700;
     font-size: 24px;
+
+    @include xlarge-screen {
+        font-size: 32px;
+    }
 }
 
 .secondary-title {

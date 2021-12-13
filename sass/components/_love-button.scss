@@ -1,10 +1,9 @@
-// HEART
-
 .love-button {
     position: relative;
     width: 24px;
     height: 24px;
     margin-right: $gutter;
+    
     &:hover {
         .love-button__icon {
             transition-timing-function: map-get($easings, ease-out);

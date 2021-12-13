@@ -22,6 +22,10 @@ img {
     @include desktop-only {
         padding: $gutter $gutter*4;
     }
+
+    @include xlarge-screen {
+        padding: $gutter*2 $gutter*4;
+    }
 }
 
 

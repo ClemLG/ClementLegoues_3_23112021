@@ -20,6 +20,11 @@
     border-radius: 32px 32px 0 0;
     background: $background-grey;
 
+    @include desktop-only {
+        width: 80%;
+        margin: auto;
+    }
+
     &__header {
         display: flex;
         justify-content: space-between;

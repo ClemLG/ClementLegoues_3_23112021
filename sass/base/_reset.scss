@@ -47,10 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-input {
-    border: none;
-}
-
 a {
 	text-decoration: none;
 	color: #000;
@@ -63,6 +59,11 @@ button {
 	cursor: pointer;
 }
 
-input:focus {
+input {
+	border: none;
+} 
+
+input:focus{
 	outline: none;
 }
+

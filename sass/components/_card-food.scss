@@ -3,7 +3,7 @@
     grid-gap: $inside-gap;
     
     @include desktop-only {
-        
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -34,6 +34,9 @@
    
     .secondary-title {
         margin-bottom: 8px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     p {
@@ -68,7 +71,7 @@
         transition: margin-left 300ms ease-in-out;
 
         &__icon {
-            transition: transform 300ms ease-in-out;        
+            transition: transform 400ms ease-in-out;        
         }
     }
 
